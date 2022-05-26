@@ -21,32 +21,47 @@
 
   <section class="menu">
     <ion-button expand="block" class="botao" routerLink="/tabs/precario">
-      <ion-icon name="pricetag-sharp"></ion-icon>Preçário
+      <ion-icon name="pricetag-sharp" slot="start"></ion-icon>Preçário 
+      <ion-text color="primary">
+        <h1>...............</h1>
+      </ion-text>
+    </ion-button>
+    <br>
+    <ion-button expand="block" class="botao" slot="secondary">
+      <ion-icon slot="start"name="add-circle-sharp"></ion-icon>Nova Estampagem
+      <ion-text color="primary">
+        <h1>......</h1>
+      </ion-text> 
     </ion-button>
     <br>
     <ion-button expand="block" class="botao">
-      <ion-icon name="add-circle-sharp"></ion-icon>Nova estampagem
-    </ion-button>
-    <br>
-    <ion-button expand="block" class="botao">
-      <ion-icon name="images-sharp"></ion-icon>Minhas Estampagens
+      <ion-icon name="images-sharp" slot="start"></ion-icon>Minhas Estampagens
+      <ion-text color="primary">
+        <h1>..</h1>
+      </ion-text> 
     </ion-button>
     <br>
 
     <ion-button expand="block" class="botao" routerLink="/compra1">
-      <div class="icon-botao">
-        <ion-icon name="cart-sharp"></ion-icon>
-      </div>
+     
+        <ion-icon name="cart-sharp" slot="start"></ion-icon>
+     
       Finalizar Compra
+      <ion-text color="primary">
+        <h1>......</h1>
+      </ion-text> 
     </ion-button>
 
     <br>
     <ion-button expand="block" class="botao">
-      <ion-icon name="share-social-sharp"></ion-icon>Partilhar Estampagem
+      <ion-icon name="share-social-sharp" slot="start"></ion-icon>Partilhar Estampagem
     </ion-button>
     <br>
     <ion-button expand="block" class="botao">
-      <ion-icon name="people-sharp"></ion-icon>Social
+      <ion-icon name="people-sharp" slot="start"></ion-icon>Social
+      <ion-text color="primary">
+        <h1>.................</h1>
+      </ion-text> 
     </ion-button>
 
   </section>
