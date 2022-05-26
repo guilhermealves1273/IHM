@@ -1,36 +1,40 @@
 <ion-header>
-<div class="css">
-  <img src="../../assets/logo.jpg" height="120" width="120" />
-  <ion-text> Bem Vindo à Pictura</ion-text>
-</div>
+  <div class="css">
+    <img src="../../assets/logo.jpg" height="120" width="120" />
+    <ion-text> Bem Vindo à Pictura</ion-text>
+  </div>
 </ion-header>
 
 <ion-content>
-<div class="conteudo">
-<ion-text align="center">Iniciar Sessão</ion-text>
-</div>
+  <div class="conteudo">
+    <ion-text align="center">Iniciar Sessão</ion-text>
+  </div>
 
-<div class="container">
-<p><ion-text>&emsp;Nome de Utilizador</ion-text></p>
-<ion-textarea></ion-textarea>
+  <div class="container">
+    <p>
+      <ion-text>&emsp;Nome de Utilizador</ion-text>
+    </p>
+    <ion-textarea></ion-textarea>
 
-<p><ion-text>&emsp;Palavra-passe</ion-text></p>
-<ion-textarea></ion-textarea>
+    <p>
+      <ion-text>&emsp;Palavra-passe</ion-text>
+    </p>
+    <ion-textarea></ion-textarea>
 
 
-  <section>
-    <ion-button (click)="onClick()" size="small">Registo</ion-button>
-    <ion-button (click)="onClick()" size="small" color="secondary">Iniciar sessão</ion-button>
-  </section>
+    <section>
+      <ion-button size="small">Registo</ion-button>
+      <ion-button routerLink="/tabs" size="small" color="secondary">Iniciar sessão</ion-button>
+    </section>
 
-</div>
+  </div>
 
-<div class="google">
+  <div class="google">
 
-  <ion-button routerLink="/tab1">
-    <ion-icon slot="start" name="logo-google"></ion-icon>
-  Entrar com o Google
-  </ion-button>
-</div>
+    <ion-button routerLink="/tabs">
+      <ion-icon slot="start" name="logo-google"></ion-icon>
+      Entrar com o Google
+    </ion-button>
+  </div>
 
 </ion-content>
