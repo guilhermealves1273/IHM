@@ -1,28 +1,55 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="toolbar">
       Menu
     </ion-title>
+
+    <div class="icon">
+      <ion-icon name="person"></ion-icon>
+    </div>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Menu</ion-title>
+      <ion-title size="large" class="toolbar">Menu</ion-title>
+      <ion-icon name="person"></ion-icon>
     </ion-toolbar>
   </ion-header>
 
-  <section>
-    <ion-button expand="block"><ion-icon name="pricetag-sharp"></ion-icon>  Preçário</ion-button>
-    <ion-button expand="block"><ion-icon name="add-circle-sharp"></ion-icon>  Nova estampagem</ion-button>
-    <ion-button expand="block"><ion-icon name="images-sharp"></ion-icon>  Minhas Estampagens</ion-button>
-    <ion-button  href="\compra1"   expand="block"><ion-icon name="cart-sharp"></ion-icon>  Finalizar Compra</ion-button>
-    <ion-button expand="block"><ion-icon name="share-social-sharp"></ion-icon>  Partilhar Estampagem</ion-button>
-    <ion-button expand="block"><ion-icon name="people-sharp"></ion-icon> Social</ion-button>
+  <section class="menu">
+    <ion-button expand="block" class="botao">
+      <ion-icon name="pricetag-sharp"></ion-icon>Preçário
+    </ion-button>
+    <br>
+    <ion-button expand="block" class="botao">
+      <ion-icon name="add-circle-sharp"></ion-icon>Nova estampagem
+    </ion-button>
+    <br>
+    <ion-button expand="block" class="botao">
+      <ion-icon name="images-sharp"></ion-icon>Minhas Estampagens
+    </ion-button>
+    <br>
+
+    <ion-button expand="block" class="botao" routerLink="/compra1">
+      <div class="icon-botao">
+        <ion-icon name="cart-sharp"></ion-icon>
+      </div>
+      Finalizar Compra
+    </ion-button>
+
+    <br>
+    <ion-button expand="block" class="botao">
+      <ion-icon name="share-social-sharp"></ion-icon>Partilhar Estampagem
+    </ion-button>
+    <br>
+    <ion-button expand="block" class="botao">
+      <ion-icon name="people-sharp"></ion-icon>Social
+    </ion-button>
+
   </section>
 
 
 </ion-content>
-
-
