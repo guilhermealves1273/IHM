@@ -1,0 +1,21 @@
+{
+    "Tele": {
+      "id": "1",
+      "modelo": "XIAOMI Mi A2",
+      "Preco": "5€"
+      
+      
+    },
+    "Tele2": {
+      "id": "2",
+      "modelo": "IPHONE 13 PRO",
+      "Preco": "7.5€"
+      
+    },
+    "Tele3": {
+      "id": "3",
+      "modelo": "SAMSUNG S22",
+      "Preco": "7.5€"
+      
+    }
+}

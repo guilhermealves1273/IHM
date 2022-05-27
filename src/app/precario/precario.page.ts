@@ -7,32 +7,43 @@ import { Router, NavigationExtras } from '@angular/router';
   styleUrls: ['./precario.page.scss'],
 })
 export class PrecarioPage  {
-  private datatshirt: any;
-  constructor(private router: Router) { 
-    
-    this.datatshirt = {
-      "tshirt": {
-          "id": "1",
-          "title": "tshirt",
-          "preco": "7.0",
-          "img": "tshirt.jpg"
-        },
-  }
-
-  //ngOnInit() {
-  //}
+  public dataPreco: any;
+  public dataCanecas: any;
+  public dataCapas: any;
+  constructor() { }
   
+  
+  
+  ngOnInit() {
+    fetch('./assets/data/preco.json')
+    .then(res => res.json())
+    .then(json => {
+      this.dataPreco = json;
+    })
+    fetch('./assets/data/canecas.json')
+    .then(oi => oi.json())
+    .then(oi1 => {
+      this.dataCanecas = oi1;
+     
+    })
+    fetch('./assets/data/capastele.json')
+    .then(res2 => res2.json())
+    .then(json2 => {
+      this.dataCapas = json2;
+     
+    })
 
-}
-public verDetalhes (precokey: string) {
-  let infopreco: NavigationExtras;
-  infopreco = {
-    state: {
-     datatshirt: this.datatshirt[precokey]
-    }
   }
-  // Utilização de Extras State (novo desde o Angular 7.2)
-  this.router.navigate(['preco-por-obj'], infopreco);
-}
+  /*ngOnInit2() {
+    fetch('./assets/data/canecas.json')
+    .then(res => res.json())
+    .then(json => {
+      this.dataCanecas = json;
+     
+    })
 
-}
+  }*/
+
+  }
+
+

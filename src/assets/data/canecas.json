@@ -1,0 +1,21 @@
+{
+    "Caneca1": {
+      "id": "1",
+      "tamanho": "S",
+      "Preco": "5€",
+      "Zona": "Frente"
+      
+    },
+    "Caneca2": {
+      "id": "2",
+      "tamanho": "S",
+      "Preco": "10€",
+      "Zona": "Frente"
+    },
+    "Caneca3": {
+      "id": "5",
+      "tamanho": "S",
+      "Preco": "15€",
+      "Zona": "Frente/Costas"
+    }
+}

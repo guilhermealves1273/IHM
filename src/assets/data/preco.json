@@ -1,12 +1,12 @@
 {
-    "1TShirtSFrontal": {
+    "1.5TShirtSFrontal": {
       "id": "1",
       "tamanho": "S",
       "Preco": "10€",
       "Zona": "Frente"
       
     },
-    "1TShirtSCostas": {
+    "1.5TShirtSCostas": {
       "id": "2",
       "tamanho": "S",
       "Preco": "10€",
@@ -18,13 +18,13 @@
       "Preco": "15€",
       "Zona": "Frente/Costas"
     },
-    "2TShirtMFrontal": {
+    "2.5TShirtMFrontal": {
       "id": "3",
       "tamanho": "M",
       "Preco": "15€",
       "Zona": "Frente"
     },
-    "2TShirtMCostas": {
+    "2.5TShirtMCostas": {
       "id": "4",
       "tamanho": "M",
       "Preco": "15€",
@@ -36,13 +36,13 @@
       "Preco": "20€",
       "Zona": "Frente/Costas"
     },
-    "3TShirtLFrente": {
+    "3.5TShirtLFrente": {
       "id": "7",
       "tamanho": "L",
       "Preco": "20€",
       "Zona": "Frente"
     },
-    "3TShirtLCostas": {
+    "3.5TShirtLCostas": {
       "id": "8",
       "tamanho": "L",
       "Preco": "20€",
@@ -54,13 +54,13 @@
       "Preco": "25€",
       "Zona": "Frente/Costas"
     },
-    "4TShirtXLFrente": {
+    "4.5TShirtXLFrente": {
       "id": "10",
       "tamanho": "XL",
       "Preco": "25€",
       "Zona": "Frente"
     },
-    "4TShirtXLCostas": {
+    "4.5TShirtXLCostas": {
       "id": "11",
       "tamanho": "XL",
       "Preco": "25€",
@@ -72,13 +72,13 @@
       "Preco": "30€",
       "Zona": "Frente/Costas"
     },
-    "5TShirtXXLFrente": {
+    "5.5TShirtXXLFrente": {
       "id": "13",
       "tamanho": "XXL",
       "Preco": "30€",
       "Zona": "Frente"
     },
-    "5TShirtXXLCostas": {
+    "5.5TShirtXXLCostas": {
       "id": "14",
       "tamanho": "XXL",
       "Preco": "30€",
