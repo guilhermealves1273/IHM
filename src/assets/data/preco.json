@@ -3,7 +3,14 @@
       "id": "1",
       "title": "TShirt",
       "Preco": "10€",
-      "Descricao": "1995"
+      "Zona": "Frente"
+      
+    },
+    "TShirtCostas": {
+      "id": "2",
+      "title": "TShirt",
+      "Preco": "10€",
+      "Zona": "Costas"
       
     }
     
