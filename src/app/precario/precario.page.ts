@@ -7,16 +7,15 @@ import { Router, NavigationExtras } from '@angular/router';
   styleUrls: ['./precario.page.scss'],
 })
 export class PrecarioPage  {
-  private dataFilmes: any;
+  private datatshirt: any;
   constructor(private router: Router) { 
     
-    this.dataFilmes = {
-      "jumanji": {
+    this.datatshirt = {
+      "tshirt": {
           "id": "1",
-          "title": "Jumanji",
-          "imdb_rating": "7.0",
-          "release_year": "1995",
-          "img": "jumanji.jpg"
+          "title": "tshirt",
+          "preco": "7.0",
+          "img": "tshirt.jpg"
         },
   }
 
@@ -29,7 +28,7 @@ public verDetalhes (precokey: string) {
   let infopreco: NavigationExtras;
   infopreco = {
     state: {
-      dadosHotel: this.dataFilmes[precokey]
+     datatshirt: this.datatshirt[precokey]
     }
   }
   // Utilização de Extras State (novo desde o Angular 7.2)
