@@ -1,23 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>precoPorObj</ion-title>
+    <ion-title>Preçário</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content >
-  <ion-grid >
+  <ion-grid class="ion-margin">
     <ion-row>
+     
       <ion-col>Objeto</ion-col>
-      <ion-col>Preco</ion-col>
-      <ion-col>Descricao</ion-col>
+      <ion-col>Preço</ion-col>
+      <ion-col>Descrição</ion-col>
     </ion-row>
-    <ion-row *ngFor="let preco of dataPreco; index as i">
-      <ion-col>{{ i + 1 }}</ion-col>
+    <ion-row *ngFor="let preco of dataPreco| keyvalue" class="ion-margin">
+      
       <ion-col>{{ preco.value.title }}</ion-col>
-      <ion-col>{{ preco.Preco }}</ion-col>
-      <ion-col>{{ preco.Descricao }}</ion-col>
+      <ion-col>{{ preco.value.Preco }}</ion-col>
+      <ion-col>{{ preco.value.Descricao}}</ion-col>
     </ion-row>
   </ion-grid>
+  
 
   
 </ion-content>
