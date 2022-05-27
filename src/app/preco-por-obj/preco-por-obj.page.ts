@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-preco-por-obj',
   templateUrl: './preco-por-obj.page.html',
@@ -18,6 +19,7 @@ export class PrecoPorObjPage implements OnInit {
       this.dataPreco = json;
       // console.log(this.dataMovies);
     })
+
   }
 
 }
