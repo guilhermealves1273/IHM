@@ -1,25 +1,37 @@
 <ion-header>
   <ion-toolbar>
+
+    <ion-title></ion-title>
+
     <ion-title>Preçário</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+
+    <div class="icon" slot="end">
+      <ion-icon name="person"></ion-icon>
+    </div>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
+<ion-content>
   <ion-grid class="ion-margin">
     <ion-row>
-     
+
       <ion-col>Objeto</ion-col>
       <ion-col>Preço</ion-col>
-      <ion-col>Descrição</ion-col>
+      <ion-col>Zona</ion-col>
     </ion-row>
     <ion-row *ngFor="let preco of dataPreco| keyvalue" class="ion-margin">
-      
+
       <ion-col>{{ preco.value.title }}</ion-col>
       <ion-col>{{ preco.value.Preco }}</ion-col>
-      <ion-col>{{ preco.value.Descricao}}</ion-col>
+      <ion-col>{{ preco.value.Zona}}</ion-col>
     </ion-row>
   </ion-grid>
-  
 
-  
+
+
 </ion-content>
