@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>precoPorObj</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="dataPreco">
+    <img src="./assets/imgs/{{ dataPreco.img }}" />
+    <ion-card-header>
+      
+      <ion-card-title>{{ dataPreco.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item-divider>
+        <ion-icon color="success" name="videocam" slot="start"></ion-icon>
+        <ion-badge color="success" slot="end">Preco: {{ dataPreco.Preco }}</ion-badge>
+      </ion-item-divider>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
