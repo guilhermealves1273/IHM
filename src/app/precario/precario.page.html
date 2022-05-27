@@ -1,9 +1,104 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Precario</ion-title>
+    <ion-title align="center">Preçário</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+
+    <div class="icon" slot="end">
+      <ion-icon name="person"></ion-icon>
+    </div>
+
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  ola
+  <ion-list>
+    <ion-list-header>  </ion-list-header>
+
+    <ion-item button="true" (click)="verDetalhes('tshirt')">
+      <ion-avatar slot="start">
+        <ion-icon name="shirt-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>T-shirt</h2>
+        <p></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button="true">
+      <ion-avatar slot="start">
+        <ion-icon name="cafe-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>Canecas</h2>
+
+        <p></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button="true">
+      <ion-avatar slot="start">
+       
+      </ion-avatar>
+      <ion-label>
+        <h2>Aventais</h2>
+        
+        <p></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button="true">
+      <ion-avatar slot="start">
+       
+      </ion-avatar>
+      <ion-label>
+        <h2>Máscaras</h2>
+  
+        <p></p>
+      </ion-label>
+    </ion-item>
+    <ion-item button="true">
+      <ion-avatar slot="start">
+       
+      </ion-avatar>
+      <ion-label>
+        <h2>Bonés</h2>
+  
+        <p></p>
+      </ion-label>
+    </ion-item>
+    <ion-item button="true">
+      <ion-avatar slot="start">
+        <ion-icon name="bag-outline"></ion-icon>
+      </ion-avatar>
+      <ion-label>
+        <h2>Sacos e mochilas</h2>
+  
+        <p></p>
+      </ion-label>
+    </ion-item>
+    <ion-item button="true">
+      <ion-avatar slot="start">
+       
+      </ion-avatar>
+      <ion-label>
+        <h2>Capas e cadernos</h2>
+        <ion-icon name="book-outline"></ion-icon>
+        <p></p>
+      </ion-label>
+    </ion-item>
+    <ion-item button="true">
+      <ion-avatar slot="start">
+       
+      </ion-avatar>
+      <ion-label>
+        <h2>Tecnologia</h2>
+  
+        <p></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

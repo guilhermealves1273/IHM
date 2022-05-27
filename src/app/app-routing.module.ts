@@ -21,7 +21,11 @@ const routes: Routes = [
   {
     path: 'precario',
     loadChildren: () => import('./precario/precario.module').then(m => m.PrecarioPageModule)
+  },  {
+    path: 'preco-por-obj',
+    loadChildren: () => import('./preco-por-obj/preco-por-obj.module').then( m => m.PrecoPorObjPageModule)
   },
+
 
 
 ];
