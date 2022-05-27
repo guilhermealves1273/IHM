@@ -20,13 +20,13 @@
   <ion-grid class="ion-margin">
     <ion-row>
 
-      <ion-col>Objeto</ion-col>
+      <ion-col>Tamanho</ion-col>
       <ion-col>Preço</ion-col>
       <ion-col>Zona</ion-col>
     </ion-row>
     <ion-row *ngFor="let preco of dataPreco| keyvalue" class="ion-margin">
-
-      <ion-col>{{ preco.value.title }}</ion-col>
+      
+      <ion-col>{{ preco.value.tamanho }}</ion-col>
       <ion-col>{{ preco.value.Preco }}</ion-col>
       <ion-col>{{ preco.value.Zona}}</ion-col>
     </ion-row>

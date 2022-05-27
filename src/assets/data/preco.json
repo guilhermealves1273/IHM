@@ -1,18 +1,94 @@
 {
-    "TShirtFrontal": {
+    "1TShirtSFrontal": {
       "id": "1",
-      "title": "TShirt",
+      "tamanho": "S",
       "Preco": "10€",
       "Zona": "Frente"
       
     },
-    "TShirtCostas": {
+    "1TShirtSCostas": {
       "id": "2",
-      "title": "TShirt",
+      "tamanho": "S",
       "Preco": "10€",
       "Zona": "Costas"
-      
-
+    },
+    "1TShirtSFrenteCostas": {
+      "id": "5",
+      "tamanho": "S",
+      "Preco": "15€",
+      "Zona": "Frente/Costas"
+    },
+    "2TShirtMFrontal": {
+      "id": "3",
+      "tamanho": "M",
+      "Preco": "15€",
+      "Zona": "Frente"
+    },
+    "2TShirtMCostas": {
+      "id": "4",
+      "tamanho": "M",
+      "Preco": "15€",
+      "Zona": "Costas"
+    },
+    "2TShirtMFrenteCostas": {
+      "id": "6",
+      "tamanho": "M",
+      "Preco": "20€",
+      "Zona": "Frente/Costas"
+    },
+    "3TShirtLFrente": {
+      "id": "7",
+      "tamanho": "L",
+      "Preco": "20€",
+      "Zona": "Frente"
+    },
+    "3TShirtLCostas": {
+      "id": "8",
+      "tamanho": "L",
+      "Preco": "20€",
+      "Zona": "Costas"
+    },
+    "3TShirtLFrenteCostas": {
+      "id": "9",
+      "tamanho": "L",
+      "Preco": "25€",
+      "Zona": "Frente/Costas"
+    },
+    "4TShirtXLFrente": {
+      "id": "10",
+      "tamanho": "XL",
+      "Preco": "25€",
+      "Zona": "Frente"
+    },
+    "4TShirtXLCostas": {
+      "id": "11",
+      "tamanho": "XL",
+      "Preco": "25€",
+      "Zona": "Costas"
+    },
+    "4TShirtXLFrenteCostas": {
+      "id": "12",
+      "tamanho": "XL",
+      "Preco": "30€",
+      "Zona": "Frente/Costas"
+    },
+    "5TShirtXXLFrente": {
+      "id": "13",
+      "tamanho": "XXL",
+      "Preco": "30€",
+      "Zona": "Frente"
+    },
+    "5TShirtXXLCostas": {
+      "id": "14",
+      "tamanho": "XXL",
+      "Preco": "30€",
+      "Zona": "Costas"
+    },
+    "5TShirtXXLFrenteCostas": {
+      "id": "15",
+      "tamanho": "XXL",
+      "Preco": "35€",
+      "Zona": "Frente/Costas"
     }
     
 }
