@@ -1,0 +1,6 @@
+{
+	"appId": "pt.pictura",
+	"appName": "IHM",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
