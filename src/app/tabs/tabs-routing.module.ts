@@ -24,6 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('../precario/precario.module').then(m => m.PrecarioPageModule)
       },
       {
+        path: 'compra1',
+        loadChildren: () => import('../compra1/compra1.module').then(m => m.Compra1PageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
