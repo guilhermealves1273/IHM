@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'compra2',
     loadChildren: () => import('./compra2/compra2.module').then( m => m.Compra2PageModule)
+  },  {
+    path: 'minhasestampagens',
+    loadChildren: () => import('./minhasestampagens/minhasestampagens.module').then( m => m.MinhasestampagensPageModule)
   },
+
  
 
 
