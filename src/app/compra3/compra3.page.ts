@@ -1,18 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
-
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.page.html',
-  styleUrls: ['./inicio.page.scss'],
+  selector: 'app-compra3',
+  templateUrl: './compra3.page.html',
+  styleUrls: ['./compra3.page.scss'],
 })
-export class InicioPage implements OnInit {
+export class Compra3Page implements OnInit {
 
   constructor(public toast: ToastController) { }
 
+
+
   async openToast(){
     const toast = await this.toast.create({
-      message:'Sessão Iniciada',
+      message:'Compra Finalizada',
       duration: 2000
     });
     toast.present();

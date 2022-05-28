@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'minhasestampagens',
     loadChildren: () => import('./minhasestampagens/minhasestampagens.module').then( m => m.MinhasestampagensPageModule)
   },
+  {
+    path: 'compra3',
+    loadChildren: () => import('./compra3/compra3.module').then( m => m.Compra3PageModule)
+  },
 
  
 

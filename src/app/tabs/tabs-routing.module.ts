@@ -40,6 +40,10 @@ const routes: Routes = [
         loadChildren: () => import('../minhasestampagens/minhasestampagens.module').then(m => m.MinhasestampagensPageModule)
       },
       {
+        path: 'compra3',
+        loadChildren: () => import('../compra3/compra3.module').then(m => m.Compra3PageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

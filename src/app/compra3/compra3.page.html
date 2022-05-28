@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">Finalizar Compra 3/3</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+
+    <div class="icon" slot="end">
+      <ion-icon name="person"></ion-icon>
+    </div>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-radio-group value="pag">
+    <ion-list-header>
+      <ion-label><h1>Seleção de Método de Pagamento</h1></ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label><ion-icon name="card-outline"></ion-icon>Cartão Multibanco</ion-label>
+      <ion-radio slot="start" color="primary" value="cartao"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label><ion-icon name="logo-paypal"></ion-icon>PayPal</ion-label>
+      <ion-radio slot="start" color="primary" value="paypal"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label><ion-icon name="reader"></ion-icon>Referencia Bancária</ion-label>
+      <ion-radio slot="start" color="primary" value="ref"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label> <img src="./assets/imgs/mbway1.png" />MBWay</ion-label>
+      <ion-radio slot="start" color="primary" value="mbway"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+
+
+
+  <div>
+    <ion-icon name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra3" (click)="openToast()"></ion-icon>
+  </div>
+  
+</ion-content>
