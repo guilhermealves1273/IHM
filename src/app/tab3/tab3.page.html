@@ -1,30 +1,32 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title align="center">Definições</ion-title>
 
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
     </ion-buttons>
 
-    <div class="icon" slot="end">
-      <ion-icon name="person"></ion-icon>
-    </div>
-
-
+    <ion-title>Definições</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button expand="block" class="button"><ion-icon name="person-circle-outline" slot="start"></ion-icon> minha conta</ion-button>
-  <ion-button expand="block" class="button"><ion-icon name="accessibility-outline"></ion-icon> Acessibilidade</ion-button>
-  
+  <ion-button expand="block" class="button">
+    <ion-icon name="person-circle-outline" slot="start"></ion-icon> minha conta
+  </ion-button>
+  <ion-button expand="block" class="button">
+    <ion-icon name="accessibility-outline"></ion-icon> Acessibilidade
+  </ion-button>
+
 
   <div class="cont" routerLink="../../inicio">
     <ion-button color="danger" class="cont" expand="block">
       <ion-icon slot="start" name="exit-outline"></ion-icon>
       Sair
-     </ion-button>
-     
+    </ion-button>
+
   </div>
-  
+
 </ion-content>
