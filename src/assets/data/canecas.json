@@ -1,21 +1,27 @@
 {
     "Caneca1": {
       "id": "1",
-      "tamanho": "S",
-      "Preco": "5€",
-      "Zona": "Frente"
+      "tipo": "Caneca Standart",
+      "Preco": "6€"
+      
       
     },
     "Caneca2": {
       "id": "2",
-      "tamanho": "S",
-      "Preco": "10€",
-      "Zona": "Frente"
+      "tipo": "Chávena de café",
+      "Preco": "3€"
+      
     },
     "Caneca3": {
       "id": "5",
-      "tamanho": "S",
-      "Preco": "15€",
-      "Zona": "Frente/Costas"
+      "tipo": "Chávena de chá",
+      "Preco": "6€"
+      
+    },
+    "Caneca4": {
+      "id": "4",
+      "tipo": "Caneca de Metal",
+      "Preco": "8€"
+      
     }
 }

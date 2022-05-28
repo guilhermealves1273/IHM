@@ -10,6 +10,7 @@ export class PrecarioPage  {
   public dataPreco: any;
   public dataCanecas: any;
   public dataCapas: any;
+  public dataAvental: any;
   constructor() { }
   
   
@@ -32,17 +33,14 @@ export class PrecarioPage  {
       this.dataCapas = json2;
      
     })
-
-  }
-  /*ngOnInit2() {
-    fetch('./assets/data/canecas.json')
-    .then(res => res.json())
-    .then(json => {
-      this.dataCanecas = json;
+    fetch('./assets/data/avental.json')
+    .then(res3 => res3.json())
+    .then(json3 => {
+      this.dataAvental = json3;
      
     })
 
-  }*/
+  }
 
   }
 

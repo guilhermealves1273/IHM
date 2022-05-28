@@ -1,0 +1,33 @@
+{
+    "A1": {
+      "id": "1",
+      "tamanho": "S",
+      "Preco": "6€"
+      
+      
+    },
+    "A2": {
+      "id": "2",
+      "tamanho": "M",
+      "Preco": "8€"
+      
+    },
+    "A3": {
+      "id": "3",
+      "tamanho": "L",
+      "Preco": "9.5€"
+      
+    },
+    "A4": {
+      "id": "4",
+      "tamanho": "XL",
+      "Preco": "10.5€"
+      
+    },
+    "A5": {
+        "id": "5",
+        "tamanho": "XXL",
+        "Preco": "12€"
+        
+      }
+}
