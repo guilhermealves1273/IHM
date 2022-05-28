@@ -15,8 +15,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-button expand="block" class="button"><ion-icon name="person-circle-outline" slot="start"></ion-icon> minha conta</ion-button>
+  <ion-button expand="block" class="button"><ion-icon name="accessibility-outline"></ion-icon> Acessibilidade</ion-button>
+  
+
   <div class="cont" routerLink="../../inicio">
-    <ion-button color="danger" class="cont">
+    <ion-button color="danger" class="cont" expand="block">
+      <ion-icon slot="start" name="exit-outline"></ion-icon>
       Sair
      </ion-button>
      
