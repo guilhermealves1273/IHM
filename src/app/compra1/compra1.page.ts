@@ -13,3 +13,4 @@ export class Compra1Page implements OnInit {
   }
 
 }
+
