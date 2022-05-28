@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'pt.pictura',
   appName: 'IHM',
   webDir: 'www',
   bundledWebRuntime: false
