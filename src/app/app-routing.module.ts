@@ -25,6 +25,10 @@ const routes: Routes = [
     path: 'preco-por-obj',
     loadChildren: () => import('./preco-por-obj/preco-por-obj.module').then( m => m.PrecoPorObjPageModule)
   },
+  {
+    path: 'compra2',
+    loadChildren: () => import('./compra2/compra2.module').then( m => m.Compra2PageModule)
+  },
 
 
 
