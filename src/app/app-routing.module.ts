@@ -21,7 +21,8 @@ const routes: Routes = [
   {
     path: 'precario',
     loadChildren: () => import('./precario/precario.module').then(m => m.PrecarioPageModule)
-  },  {
+  },
+  {
     path: 'preco-por-obj',
     loadChildren: () => import('./preco-por-obj/preco-por-obj.module').then( m => m.PrecoPorObjPageModule)
   },
@@ -29,7 +30,7 @@ const routes: Routes = [
     path: 'compra2',
     loadChildren: () => import('./compra2/compra2.module').then( m => m.Compra2PageModule)
   },
-
+ 
 
 
 ];
