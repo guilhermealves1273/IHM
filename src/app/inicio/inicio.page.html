@@ -1,43 +1,54 @@
 <ion-header>
   <div class="css">
     <img src="../../assets/logo.jpg" height="120" width="120" />
-    <ion-text> Bem Vindo à Pictura</ion-text>
+    <ion-text class="titulo"> Bem Vindo à Pictura</ion-text>
   </div>
 </ion-header>
 
 <ion-content>
-  <div class="conteudo">
-    <ion-text align="center">Iniciar Sessão</ion-text>
+
+
+
+
+  <div class="LabelIncio">
+    <ion-text class="LabelIncio">Iniciar Sessão</ion-text>
   </div>
 
   <div class="container">
-    <p>
-      <ion-text>&emsp;Nome de Utilizador</ion-text>
-      <ion-item><ion-input type="text" ></ion-input></ion-item>
-    </p>
-   <!-- <ion-textarea></ion-textarea>-->
 
-    <p>
-      <ion-text>&emsp;Palavra-passe</ion-text>
-      <ion-item><ion-input type="password" ></ion-input></ion-item>
-      
-    </p>
-    <!--<ion-textarea></ion-textarea>-->
+    <ion-item lines="full" align="center">
+      <ion-label position="floating">
+        Nome de Utilizador
+      </ion-label>
 
+      <ion-input required></ion-input>
 
-    <section>
-      <ion-button size="small" class="regs">Registo</ion-button>
-      <ion-button routerLink="/tabs" size="small" color="secondary" class="login">Iniciar sessão</ion-button>
-    </section>
+    </ion-item>
 
-  </div>
+    <ion-item>
+      <ion-label class="input" position="floating">
+        Palavra-passe
+      </ion-label>
+      <ion-input class="input" type="password" required></ion-input>
 
-  <div class="google">
+    </ion-item>
 
-    <ion-button routerLink="/tabs">
-      <ion-icon slot="start" name="logo-google"></ion-icon>
-      Entrar com o Google
-    </ion-button>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/tabs" type="submit" color="danger" class="botao">Iniciar Sessão</ion-button>
+        <ion-button color="danger" class="botao">Registo</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/tabs" type="submit" color="danger" class="botaoGoogle">
+          <ion-icon slot="start" name="logo-google"></ion-icon>
+          Entrar com o Google
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
   </div>
 
 </ion-content>
