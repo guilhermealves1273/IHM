@@ -24,8 +24,20 @@ const routes: Routes = [
         loadChildren: () => import('../precario/precario.module').then(m => m.PrecarioPageModule)
       },
       {
+        path: 'compra1',
+        loadChildren: () => import('../compra1/compra1.module').then(m => m.Compra1PageModule)
+      },
+      {
         path: 'compra2',
         loadChildren: () => import('../compra2/compra2.module').then(m => m.Compra2PageModule)
+      },
+      {
+        path: 'compra1',
+        loadChildren: () => import('../compra1/compra1.module').then(m => m.Compra1PageModule)
+      },
+      {
+        path: 'minhasestampagens',
+        loadChildren: () => import('../minhasestampagens/minhasestampagens.module').then(m => m.MinhasestampagensPageModule)
       },
       {
         path: '',

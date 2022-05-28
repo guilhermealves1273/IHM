@@ -13,5 +13,8 @@ export class Compra1Page implements OnInit {
   }
 
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8fe276f6b19e0766b3e6efd24de2a4db1c9a63cf

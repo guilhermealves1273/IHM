@@ -1,14 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="toolbar">
-      Menu
-    </ion-title>
 
-    <div class="icon" slot="end">
-      <ion-icon name="person" routerLink="/inicio"></ion-icon>
-    </div>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Menu</ion-title>
 
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -38,16 +40,16 @@
 
     <br>
 
-    <ion-button class="botao">
+    <ion-button class="botao" routerLink="/tabs/minhasestampagens">
       <span>
-        <ion-icon name="images-outline" class="icon-botao"></ion-icon>
+        <ion-icon name="images-outline" class="icon-botao" ></ion-icon>
         Minhas Estampagens
       </span>
     </ion-button>
 
     <br>
+    <ion-button class="botao" routerLink="/tabs/compra1">
 
-    <ion-button class="botao" routerLink="/compra1">
       <span>
         <ion-icon class="icon-botao" name="cart-sharp"></ion-icon>
         Finalizar Compra
