@@ -1,52 +1,53 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title align="center">Nova Estampagem</ion-title>
 
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
+  <ion-toolbar>
+
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
     </ion-buttons>
 
-    <div class="icon" slot="end">
-      <ion-icon name="person"></ion-icon>
-    </div>
+    <ion-title>Nova Estampagem</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-<ion-list>
-  <ion-item>
-    <ion-label>Objeto</ion-label>
-    <ion-select value="objeto">
-      <ion-select-option value="T-shirt">T-shirt</ion-select-option>
-      <ion-select-option value="caneca">Caneca</ion-select-option>
-      <ion-select-option value="capa">Capa Telemovel</ion-select-option>
-    </ion-select>
-  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label>Objeto</ion-label>
+      <ion-select value="objeto">
+        <ion-select-option value="T-shirt">T-shirt</ion-select-option>
+        <ion-select-option value="caneca">Caneca</ion-select-option>
+        <ion-select-option value="capa">Capa Telemovel</ion-select-option>
+      </ion-select>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>Tamanho</ion-label>
-    <ion-select value="Tamanho">
-      <ion-select-option value="S">S</ion-select-option>
-      <ion-select-option value="M">M</ion-select-option>
-      <ion-select-option value="L">L</ion-select-option>
-      <ion-select-option value="XL">XL</ion-select-option>
-      <ion-select-option value="XXL">XXL</ion-select-option>
-    </ion-select>
-  </ion-item>
-</ion-list>
+    <ion-item>
+      <ion-label>Tamanho</ion-label>
+      <ion-select value="Tamanho">
+        <ion-select-option value="S">S</ion-select-option>
+        <ion-select-option value="M">M</ion-select-option>
+        <ion-select-option value="L">L</ion-select-option>
+        <ion-select-option value="XL">XL</ion-select-option>
+        <ion-select-option value="XXL">XXL</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
 
-<img src="../../assets/caneca.png" heigth="auto" width="auto" class="imagem_caneca"/>
+  <img src="../../assets/caneca.png" heigth="auto" width="auto" class="imagem_caneca" />
 
-<ion-button size="small" (click)="onClick()" class="button_guardar" >
-  <ion-icon slot="start" name="save"></ion-icon>
-Guardar Estampagem
-</ion-button>
+  <ion-button size="small" (click)="onClick()" class="button_guardar">
+    <ion-icon slot="start" name="save"></ion-icon>
+    Guardar Estampagem
+  </ion-button>
 
-<ion-button size="small" (click)="onClick()" class="button_guardar2" >
-  <ion-icon slot="start" name="cart"></ion-icon>
-Finalizar Compra
-</ion-button>
+  <ion-button size="small" (click)="onClick()" class="button_guardar2">
+    <ion-icon slot="start" name="cart"></ion-icon>
+    Finalizar Compra
+  </ion-button>
 
 
 </ion-content>

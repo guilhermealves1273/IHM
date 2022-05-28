@@ -1,14 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="toolbar">
-      Menu
-    </ion-title>
 
-    <div class="icon" slot="end">
-      <ion-icon name="person" routerLink="/inicio"></ion-icon>
-    </div>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Menu</ion-title>
 
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -47,7 +49,11 @@
 
     <br>
 
+<<<<<<< HEAD
     <ion-button class="botao" routerLink="../compra1">
+=======
+    <ion-button class="botao" routerLink="/tabs/compra1">
+>>>>>>> 69e26a59d94715609e41e0318bb3aac36635981d
       <span>
         <ion-icon class="icon-botao" name="cart-sharp"></ion-icon>
         Finalizar Compra
