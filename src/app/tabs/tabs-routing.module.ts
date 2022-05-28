@@ -28,6 +28,10 @@ const routes: Routes = [
         loadChildren: () => import('../compra1/compra1.module').then(m => m.Compra1PageModule)
       },
       {
+        path: 'compra2',
+        loadChildren: () => import('../compra2/compra2.module').then(m => m.Compra2PageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
