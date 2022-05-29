@@ -30,6 +30,15 @@
   width: 120px;
 }
 
+.quantidade{
+  
+  position: absolute;
+  top: 400px;
+  
+  right: 0;
+  height: 120px;
+  width: 120px;
+}
 .imagem2{
   border-radius: 10px 10px 10px 10px;
   position: absolute;
@@ -41,8 +50,16 @@
 }
 .next {
   font-size: 100px;
-  margin-top: 475px;
+  margin-top: 350px;
   }
+
+.seta{
+  position: absolute;
+  top: 500px;
+  left: 170px;
+  right: 0;
+}
+
 
 .center{
 text-align: center;

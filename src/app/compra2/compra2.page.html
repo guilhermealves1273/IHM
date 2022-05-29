@@ -73,9 +73,12 @@
 
 
     <div class="center">
-      <ion-icon type="submit" name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra3">
-      </ion-icon>
+      <ion-button (click)="onClick()" fill="outline" routerLink="/compra3" color ="danger">
+        <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+      </ion-button>
     </div>
   </form>
+
+
 
 </ion-content>
