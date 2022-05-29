@@ -18,57 +18,64 @@
 
 <ion-content>
 
+
   <div class="titulo">
     <ion-text>Dados de Faturação</ion-text>
   </div>
 
-  <ion-item lines="full" align="center">
-    <ion-label position="floating">
-      Nome Completo
-    </ion-label>
-    <ion-input required type="text"></ion-input>
-  </ion-item>
+  <form [formGroup]="IHMForm" (ngSubmit)="submitForm()" novalidate>
 
-  <ion-item lines="full" align="center">
-    <ion-label position="floating">
-      NIF
-    </ion-label>
-    <ion-input required type="number"></ion-input>
-  </ion-item>
+    <ion-item lines="full" align="center">
+      <ion-label position="floating">
+        Nome Completo
+      </ion-label>
+      <ion-input required formControlName="nome" type="text"></ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="isSubmitted && formControls.nome.errors?.required">
+      Nome é de preenchimento obrigatório
+    </ion-text>
 
-  <ion-item lines="full" align="center">
-    <ion-label position="floating">
-      Número da porta
-    </ion-label>
-    <ion-input required type="number"></ion-input>
-  </ion-item>
+    <ion-item lines="full" align="center">
+      <ion-label position="floating">
+        NIF
+      </ion-label>
+      <ion-input required formControlName="nif" type="number"></ion-input>
+    </ion-item>
 
-  <ion-item lines="full" align="center">
-    <ion-label position="floating">
-      Rua
-    </ion-label>
-    <ion-input required type="text"></ion-input>
-  </ion-item>
+    <ion-item lines="full" align="center">
+      <ion-label position="floating">
+        Número da porta
+      </ion-label>
+      <ion-input required formControlName="nPorta" type="number"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label>Código Postal </ion-label>
-    <ion-input placeholder="CodPostal" type="number"></ion-input>-<ion-input placeholder="CodPostal" type="number">
-    </ion-input>
-  </ion-item>
+    <ion-item lines="full" align="center">
+      <ion-label position="floating">
+        Rua
+      </ion-label>
+      <ion-input required formControlName="rua" type="text"></ion-input>
+    </ion-item>
 
-  <ion-item lines="full" align="center">
-    <ion-label position="floating">
-      Cidade
-    </ion-label>
-    <ion-input required type="text"></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label>Código Postal </ion-label>
+      <ion-input placeholder="CodPostal" formControlName="codPostal1" type="number"></ion-input>-<ion-input
+        formControlName="codPostal2" placeholder="CodPostal" type="number">
+      </ion-input>
+    </ion-item>
+
+    <ion-item lines="full" align="center">
+      <ion-label position="floating">
+        Cidade
+      </ion-label>
+      <ion-input required formControlName="cidade" type="text"></ion-input>
+    </ion-item>
 
 
 
-  <div class="center">
-    <ion-icon name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra3"></ion-icon>
-  </div>
-
-
+    <div class="center">
+      <ion-icon type="submit" name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra3">
+      </ion-icon>
+    </div>
+  </form>
 
 </ion-content>
