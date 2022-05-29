@@ -20,17 +20,7 @@
   <ion-title align="center" class="titulo">Selecionar os produtos(s)</ion-title>
 
   <button (click)="click()" block>
-<<<<<<< HEAD
-    <img src=" ../../../../assets/imgs/tshirt.png" class="imagem1">
-</button>
-<button (click)="click()" block>
-  <img src=" ../../../../assets/imgs/cao1.png"  class="imagem2">
-</button>
 
-<ion-button (click)="onClick()" routerLink="/tabs/tab2" class="add1" color="danger" >
-  <ion-icon slot="icon-only" name="add"></ion-icon>
-</ion-button>
-=======
     <img src=" ./assets/imgs/tshirt.png" class="imagem1">
   </button>
   <button (click)="click()" block>
@@ -40,47 +30,47 @@
   <ion-button (click)="onClick()" routerLink="/tabs/tab2" class="add1">
     <ion-icon slot="icon-only" name="add"></ion-icon>
   </ion-button>
->>>>>>> beb6ca7cdb736c70eafc814dd0554b38c98f095b
 
   <div class="center">
     <ion-icon name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra2"></ion-icon>
   </div>
 
-<div class="quantidade">
-<ion-item>
-  <ion-label position="floating" >Quantidade <ion-text color="danger">*</ion-text></ion-label>
-  <ion-input  required  type="number" id="1"></ion-input>
-</ion-item>
+  <div class="quantidade">
+    <ion-item>
+      <ion-label position="floating">Quantidade <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="number" id="1"></ion-input>
+    </ion-item>
 
-<ion-item>
-  <ion-label position="fixed"> Valor</ion-label>
-  <ion-text id="total"></ion-text>
-  </ion-item>
-</div>
-
-
-
-<div class="seguinte">
-
-  <ion-input fill=" outline" id="botao">Calcular</ion-input>
-  
-    <ion-button (click)="onClick()" fill="outline" routerLink="/compra2" color ="danger">
-      <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
-    </ion-button>
-  
+    <ion-item>
+      <ion-label position="fixed"> Valor</ion-label>
+      <ion-text id="total"></ion-text>
+    </ion-item>
   </div>
 
-<script>
 
-var quantidade= Document.getById("1");
-var botao= Document.getElementById("botao");
-botao.addEventListener("click",res)
 
-function res(){
-var resultado= 1.30* quantidade.value;
-document.getElementById("total").innerHTML = resultado;
-}
-https://baulcode.com/codigos/multiplicar-dos-inputs/
-</script>
+  <div class="seguinte">
+
+    <ion-input fill=" outline" id="botao">Calcular</ion-input>
+
+    <ion-button (click)="onClick()" fill="outline" routerLink="/compra2" color="danger">
+      <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+
+  </div>
+
+  <script>
+
+    var quantidade = Document.getById("1");
+    var botao = Document.getElementById("botao");
+    botao.addEventListener("click", res)
+
+    function res() {
+      var resultado = 1.30 * quantidade.value;
+      document.getElementById("total").innerHTML = resultado;
+    }
+    https://baulcode.com/codigos/multiplicar-dos-inputs/
+  </script>
 
 </ion-content>
