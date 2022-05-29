@@ -1,8 +1,7 @@
 .icon {
-    font-size: 25px;
-    text-align: center;
-    margin-right: 25px;
-    margin-left: 20px;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 5%;
   }
   .cont {
     position: absolute;
@@ -10,11 +9,13 @@
     left: 0%;
     top: 88%;
   }
-  
+
   .next {
-      font-size: 100px;
-    //text-align: center;
-    position: absolute;
-    margin-left: 140px;
-      top: 500px;
+    font-size: 100px;
+    margin-top: 250px;
     }
+
+  .center{
+  text-align: center;
+  }
+

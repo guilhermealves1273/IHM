@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,8 +13,9 @@ import { Compra2Page } from './compra2.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Compra2PageRoutingModule
+    Compra2PageRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [Compra2Page]
 })
-export class Compra2PageModule {}
+export class Compra2PageModule { }

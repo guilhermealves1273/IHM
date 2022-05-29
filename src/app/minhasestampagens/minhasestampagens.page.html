@@ -14,25 +14,29 @@
 </ion-header>
 
 <ion-content>
-  <ion-slides>
-    <ion-slide>
-      <div class="slide">
-        <img src="./assets/imgs/tshirt.png" />
-        <h2></h2>
-        <p>
-         
-        </p>
-      </div>
-    </ion-slide>
-    <ion-slide>
-      <div class="slide">
-        <img src="./assets/imgs/cao1.png" />
-        <h2></h2>
-        <p>
-         
-        </p>
-      </div>
-    </ion-slide>
-    
-  </ion-slides>
+
+  <button class="imagem_botao">
+    <img src=" ./assets/imgs/tshirt.png" class="imagem1">
+  </button>
+
+  <button>
+    <img src=" ./assets/imgs/cao1.png" class="imagem2">
+  </button>
+
+  <div class="container">
+    <ion-button class="botao" routerLink="/tabs/tab2">
+      <span>
+        <ion-icon name="construct-outline" class="icon-botao"></ion-icon>
+        Editar
+      </span>
+    </ion-button>
+    <br>
+    <ion-button class="botao" color="danger" routerLink="/tabs/tab2">
+      <span>
+        <ion-icon name="trash-outline" class="icon-botao"></ion-icon>
+        Eliminar
+      </span>
+    </ion-button>
+
+  </div>
 </ion-content>

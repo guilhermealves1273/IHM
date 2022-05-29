@@ -11,10 +11,12 @@ export class Compra3Page implements OnInit {
 
 
 
-  async openToast(){
+  async openToast() {
     const toast = await this.toast.create({
-      message:'Compra Finalizada',
-      duration: 2000
+      message: 'Compra realizada com sucesso',
+      duration: 2000,
+      color: "success",
+
     });
     toast.present();
   }
