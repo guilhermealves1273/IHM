@@ -16,17 +16,43 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button expand="block" class="button">
-    <ion-icon name="person-circle-outline" slot="start"></ion-icon> minha conta
-  </ion-button>
-  <ion-button expand="block" class="button">
-    <ion-icon name="accessibility-outline"></ion-icon> Acessibilidade
-  </ion-button>
-  <ion-button expand="block" class="button">
-    <ion-icon name="lock-closed-outline"></ion-icon> Privacidade
+  
+ 
+  <section class="menu">
+  <ion-button class="botao">
+    <span>
+      <ion-icon name="person-circle-outline" class="icon-botao"></ion-icon>
+      A Minha Conta
+    </span>
   </ion-button>
 
+  <br>
 
+  <ion-button class="botao">
+    <span>
+      <ion-icon class="icon-botao" name="accessibility-outline"></ion-icon>
+      Acessibilidade
+    </span>
+  </ion-button>
+
+  <br>
+
+  <ion-button class="botao">
+    <span>
+      <ion-icon name="lock-closed-outline" class="icon-botao" ></ion-icon>
+      Privacidade 
+    </span>
+  </ion-button>
+
+  <br>
+  <ion-button class="botao">
+    <span>
+      <ion-icon class="icon-botao" name="notifications-outline"></ion-icon>
+      Notificações
+    </span>
+  </ion-button>
+  <br>
+</section>
   <div class="cont" routerLink="../../inicio">
     <ion-button color="danger" class="cont" expand="block">
       <ion-icon slot="start" name="exit-outline"></ion-icon>

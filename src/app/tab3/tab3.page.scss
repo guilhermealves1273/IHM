@@ -10,3 +10,30 @@
         margin-right: 17%;
 
    }
+   .menu {
+    text-align: center;
+    margin-top: 25%;
+  }
+  
+  .botao {
+    width: 320px;
+    height: 45px;
+    text-align: left;
+    margin-top:20px;
+    
+  }
+  
+  .icon-botao {
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 22px;
+  }
+  
+  ion-button{
+    span{
+      text-align:left;
+      width:100%;
+      font-size: 18px;
+    }
+  }
+  
