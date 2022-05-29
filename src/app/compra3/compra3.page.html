@@ -48,10 +48,12 @@
   </ion-radio-group>
 
 
+  <div class="seta">
 
-  <div class="center">
-    <ion-icon name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra3"
-      (click)="openToast()"></ion-icon>
+    <ion-button (click)="openToast()" fill="outline" routerLink="../compra3" color="danger">
+      <ion-icon slot="icon-only" name="checkmark-outline"></ion-icon>
+    </ion-button>
+
   </div>
 
 </ion-content>
