@@ -3,7 +3,7 @@
     <ion-title align="center">Finalizar Compra 2/3</ion-title>
 
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
+      <ion-back-button defaultHref="/tabs/compra1"></ion-back-button>
     </ion-buttons>
 
     <div class="icon" slot="end">
@@ -33,7 +33,8 @@
   </ion-item>
   <ion-item>
     <ion-label>Código Postal </ion-label>
-    <ion-input placeholder="CodPostal" type="number"></ion-input>-<ion-input placeholder="CodPostal" type="number"></ion-input>
+    <ion-input placeholder="CodPostal" type="number"></ion-input>-<ion-input placeholder="CodPostal" type="number">
+    </ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Cidade </ion-label>
@@ -41,10 +42,10 @@
   </ion-item>
 
 
-  <div>
+  <div class="center">
     <ion-icon name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra3"></ion-icon>
   </div>
 
 
-  
+
 </ion-content>

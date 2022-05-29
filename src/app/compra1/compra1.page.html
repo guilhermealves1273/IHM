@@ -20,15 +20,18 @@
   <ion-title align="center" class="titulo">Selecionar os produtos(s)</ion-title>
 
   <button (click)="click()" block>
-    <img src=" ../../../../assets/imgs/t" class="imagem1">
-</button>
-<button (click)="click()" block>
-  <img src=" ../../../../assets/imgs/cao1.png"  class="imagem2">
-</button>
+    <img src=" ./assets/imgs/tshirt.png" class="imagem1">
+  </button>
+  <button (click)="click()" block>
+    <img src=" ./assets/imgs/cao1.png" class="imagem2">
+  </button>
 
-<ion-button (click)="onClick()" routerLink="/tabs/tab2" class="add1" >
-  <ion-icon slot="icon-only" name="add"></ion-icon>
-</ion-button>
+  <ion-button (click)="onClick()" routerLink="/tabs/tab2" class="add1">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
 
+  <div class="center">
+    <ion-icon name="arrow-forward-circle-outline" class="next" button="true" routerLink="../compra2"></ion-icon>
+  </div>
 
 </ion-content>
