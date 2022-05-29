@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title align="center">Finalizar Compra 1/3</ion-title>
+    <ion-title>Finalizar Compra 1/3</ion-title>
 
     <ion-buttons slot="start">
       <ion-back-button defaultHref="tabs"></ion-back-button>
@@ -20,37 +20,38 @@
   <ion-title align="center" class="titulo">Selecionar os produtos(s)</ion-title>
 
   <button (click)="click()" block>
-    <img src=" ../../../../assets/imgs/tshirt.png" class="imagem1">
+    <img src=" ./assets/imgs/tshirt.png" class="imagem1">
   </button>
-<button (click)="click()" block>
-  <img src=" ../../../../assets/imgs/cao1.png"  class="imagem2">
-</button>
+  <button (click)="click()" block>
+    <img src=" ./assets/imgs/cao1.png" class="imagem2">
+  </button>
 
-<ion-button (click)="onClick()" routerLink="/tabs/tab2" class="add1" color="danger" >
-  <ion-icon slot="icon-only" name="add"></ion-icon>
-</ion-button>
-
-<div class="next">
-
-<ion-item>
-  <ion-label position="floating" >Quantidade <ion-text color="danger">*</ion-text></ion-label>
-  <ion-input  required  type="number"></ion-input>
-</ion-item>
-
-<ion-item>
-  <ion-label position="fixed"> Valor</ion-label>
-  <ion-text >22.58€</ion-text>
-  </ion-item>
-
-</div>
-
-<div class="seta">
-
-  <ion-button (click)="onClick()" fill="outline" routerLink="/compra2" color ="danger">
-    <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+  <ion-button (click)="onClick()" routerLink="/tabs/tab2" class="add1" color="danger">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
   </ion-button>
 
-</div>
+  <div class="next">
+
+    <ion-item>
+      <ion-label position="floating">Quantidade <ion-text color="danger">*</ion-text>
+      </ion-label>
+      <ion-input required type="number"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed"> Valor</ion-label>
+      <ion-text>22.58€</ion-text>
+    </ion-item>
+
+  </div>
+
+  <div class="seta">
+
+    <ion-button fill="outline" routerLink="/tabs/compra2" color="danger">
+      <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+
+  </div>
 
 
 </ion-content>

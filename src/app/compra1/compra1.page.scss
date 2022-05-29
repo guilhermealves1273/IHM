@@ -3,14 +3,13 @@
   text-align: center;
   margin-right: 5%;
 }
-.titulo{
-
+.titulo {
   position: absolute;
   top: 30px;
   left: 0;
   right: 0;
 }
-.imagem1{
+.imagem1 {
   border-radius: 10px 10px 10px 10px;
   position: absolute;
   top: 90px;
@@ -20,7 +19,7 @@
   width: 120px;
 }
 
-.add1{
+.add1 {
   border-radius: 10px 10px 10px 10px;
   position: absolute;
   top: 230px;
@@ -30,16 +29,15 @@
   width: 120px;
 }
 
-.quantidade{
-  
+.quantidade {
   position: absolute;
   top: 400px;
-  
+
   right: 0;
   height: 120px;
   width: 120px;
 }
-.imagem2{
+.imagem2 {
   border-radius: 10px 10px 10px 10px;
   position: absolute;
   top: 90px;
@@ -51,17 +49,13 @@
 .next {
   font-size: 100px;
   margin-top: 350px;
-  }
-
-.seta{
-  position: absolute;
-  top: 500px;
-  left: 170px;
-  right: 0;
 }
 
-
-.center{
-text-align: center;
+.seta {
+  text-align: center;
+  margin-top: 20px;
 }
 
+.center {
+  text-align: center;
+}
