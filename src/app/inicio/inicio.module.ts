@@ -8,6 +8,7 @@ import { InicioPageRoutingModule } from './inicio-routing.module';
 
 import { InicioPage } from './inicio.page';
 
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 @NgModule({
   imports: [
     CommonModule,
@@ -18,4 +19,8 @@ import { InicioPage } from './inicio.page';
   ],
   declarations: [InicioPage]
 })
-export class InicioPageModule { }
+export class InicioPageModule {
+  constructor(private orientacao: ScreenOrientation) {
+    this.orientacao.lock(this.orientacao.ORIENTATIONS.PORTRAIT);
+  }
+}
