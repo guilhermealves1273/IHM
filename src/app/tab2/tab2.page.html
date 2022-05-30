@@ -39,8 +39,16 @@
     </ion-item>
   </ion-list>
 
+<!--
   <img src="../../assets/caneca.png" heigth="auto" width="auto" class="imagem_caneca" />
+-->
 
+  <div class="container">
+    <img src = "{{imgURL}}"  height="200" width="200">
+    <ion-button (click) = "getCamera()"> Camera</ion-button>
+    <ion-button (click) = "getGallery()"> Galeria</ion-button>
+  </div>
+  
   <ion-button size="small" (click)="onClick()" class="button_guardar" >
     <ion-icon slot="start" name="save"></ion-icon>
     Guardar Estampagem
@@ -50,6 +58,8 @@
     <ion-icon slot="start" name="cart"></ion-icon>
     Finalizar Compra
   </ion-button>
+
+  
 
 
 </ion-content>
