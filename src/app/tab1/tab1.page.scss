@@ -4,17 +4,20 @@
   //margin-right: -5%;
 }
 
-
 .menu {
   text-align: center;
   margin-top: 25%;
+}
+
+.center {
+  text-align: center;
 }
 
 .botao {
   width: 320px;
   height: 45px;
   text-align: left;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .icon-botao {
@@ -23,10 +26,10 @@
   font-size: 22px;
 }
 
-ion-button{
-  span{
-    text-align:left;
-    width:100%;
+ion-button {
+  span {
+    text-align: left;
+    width: 100%;
     font-size: 18px;
   }
 }

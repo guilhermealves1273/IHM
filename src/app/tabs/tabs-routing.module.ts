@@ -44,6 +44,10 @@ const routes: Routes = [
         loadChildren: () => import('../compra3/compra3.module').then(m => m.Compra3PageModule)
       },
       {
+        path: 'social',
+        loadChildren: () => import('../social/social.module').then(m => m.SocialPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

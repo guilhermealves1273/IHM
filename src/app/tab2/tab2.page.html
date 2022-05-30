@@ -39,27 +39,37 @@
     </ion-item>
   </ion-list>
 
-<!--
+  <!--
   <img src="../../assets/caneca.png" heigth="auto" width="auto" class="imagem_caneca" />
 -->
 
   <div class="container">
-    <img src = "{{imgURL}}"  height="200" width="200">
-    <ion-button (click) = "getCamera()"> Camera</ion-button>
-    <ion-button (click) = "getGallery()"> Galeria</ion-button>
+    <img src="{{imgURL}}" height="200" width="200">
+    <br>
+    <ion-button color="blue2" (click)="getCamera()">
+      <ion-icon name="camera-outline"></ion-icon>Camera
+    </ion-button>
+    <ion-button color="blue2" (click)="getGallery()">
+      <ion-icon name="image-outline"></ion-icon>Galeria
+    </ion-button>
   </div>
-  
-  <ion-button size="small" (click)="onClick()" class="button_guardar" >
-    <ion-icon slot="start" name="save"></ion-icon>
-    Guardar Estampagem
-  </ion-button>
 
-  <ion-button size="small" (click)="onClick()" class="button_guardar2" routerLink="/tabs/compra1">
-    <ion-icon slot="start" name="cart"></ion-icon>
-    Finalizar Compra
-  </ion-button>
+  <div class="center">
+    <ion-button class="botao" color="blue1">
+      <span>
+        <ion-icon class="icon-botao" name="save"></ion-icon>
+        Guardar Estampagem
+      </span>
+    </ion-button>
+    <br>
+    <ion-button class="botao" routerLink="/tabs/compra1" color="blue1">
+      <span>
+        <ion-icon class="icon-botao" name="cart-sharp"></ion-icon>
+        Finalizar Compra
+      </span>
+    </ion-button>
+  </div>
 
-  
 
 
 </ion-content>
