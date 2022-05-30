@@ -30,19 +30,8 @@
 
   <div class="next">
 
-<ion-item>
-  <ion-label position="floating" >Quantidade <ion-text color="danger">*</ion-text></ion-label>
-  <ion-input (change)="handleOnChange($event)"  required  type="number" id="quantidade" ></ion-input>
-
-</ion-item>
-
-<ion-item>
-  <ion-label position="fixed"> Valor</ion-label>
-  <ion-input id="resultado" type= "number" readonly></ion-input>
-  </ion-item>
-
     <ion-item>
-      <ion-label position="floating">Quantidade <ion-text color="danger">*</ion-text>
+      <ion-label style="margin-top: 20px;" position="floating">Quantidade <ion-text color="danger">*</ion-text>
       </ion-label>
       <ion-input required type="number"></ion-input>
     </ion-item>
@@ -57,25 +46,25 @@
 
   <div class="seta">
 
-  <ion-button fill="outline" id="botao">
-    Calcular
-  </ion-button>
+    <ion-button fill="outline" id="botao">
+      Calcular
+    </ion-button>
 
-  <ion-button fill="outline" routerLink="/compra2" color ="danger">
-    <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
-  </ion-button>
+    <ion-button fill="outline" routerLink="/compra2" color="danger">
+      <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+    </ion-button>
 
 
   </div>
 
-<!--<script type>
+  <!--<script type>
 
   var quantidade = Document.getElementById("quantidade");
   var botao= Document.getElementById("botao");
   botao.addListener("click",res);
 
   function res(){
-          
+
     var resultado= quantidade*1.5;
     Document.getElementById("resultado")= resultado;
   }
