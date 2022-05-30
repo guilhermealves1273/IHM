@@ -37,6 +37,10 @@ const routes: Routes = [
     path: 'compra3',
     loadChildren: () => import('./compra3/compra3.module').then( m => m.Compra3PageModule)
   },
+  {
+    path: 'social',
+    loadChildren: () => import('./social/social.module').then( m => m.SocialPageModule)
+  },
 
  
 
