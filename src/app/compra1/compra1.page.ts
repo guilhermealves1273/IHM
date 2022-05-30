@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./compra1.page.scss'],
 })
 export class Compra1Page implements OnInit {
-
-  constructor() { }
+  resultado:string
+  constructor() {
+    this.resultado = "0"
+   }
 
   ngOnInit() {
+  }
+
+  handleOnChange(event){
+    console.log(event.target.value)
   }
 
 }
