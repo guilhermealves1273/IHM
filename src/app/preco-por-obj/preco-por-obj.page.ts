@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-preco-por-obj',
@@ -8,18 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrecoPorObjPage implements OnInit {
 
-  public dataPreco: any;
+  public infoEstamp: any;
+  
 
-  constructor() { }
+  constructor(private router: Router, private rotaAtiva: ActivatedRoute) {
+    this.rotaAtiva.queryParams.subscribe(params => {
+      if (this.router.getCurrentNavigation().extras.state) {
+        this.infoEstamp = this.router.getCurrentNavigation().extras.state. dadosEstamp;
+        console.log(this.infoEstamp);
+      }
+    })
+   }
+   
 
   ngOnInit() {
-    fetch('./assets/data/preco.json')
-    .then(res => res.json())
-    .then(json => {
-      this.dataPreco = json;
-      // console.log(this.dataMovies);
-    })
+   
+    }
 
   }
 
-}
+

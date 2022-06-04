@@ -48,6 +48,10 @@ const routes: Routes = [
         loadChildren: () => import('../social/social.module').then(m => m.SocialPageModule)
       },
       {
+        path: 'preco-por-obj',
+        loadChildren: () => import('../preco-por-obj/preco-por-obj.module').then(m => m.PrecoPorObjPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="blue1">
 
-    <ion-title></ion-title>
+    
 
-    <ion-title>Preçário</ion-title>
+    <ion-title>Informações de Produto</ion-title>
 
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
+      <ion-back-button defaultHref="tabs/minhasestampagens"></ion-back-button>
     </ion-buttons>
 
     <div class="icon" slot="end">
@@ -17,20 +17,20 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid class="ion-margin">
-    <ion-row>
 
-      <ion-col>Tamanho</ion-col>
-      <ion-col>Preço</ion-col>
-      <ion-col>Zona</ion-col>
-    </ion-row>
-    <ion-row *ngFor="let preco of dataPreco| keyvalue" class="ion-margin">
-      
-      <ion-col>{{ preco.value.tamanho }}</ion-col>
-      <ion-col>{{ preco.value.Preco }}</ion-col>
-      <ion-col>{{ preco.value.Zona}}</ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-card *ngIf="infoEstamp">
+    <img src="../../assets/imgs/{{ infoEstamp.img }}" />
+    <ion-card-header>
+      <ion-card-subtitle>{{ infoEstamp.Preco }} €</ion-card-subtitle>
+      <ion-card-title>{{ infoEstamp.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item-divider>
+        <ion-icon color="success" slot="start"></ion-icon>
+        <ion-badge color="blue1" slot="end"><h2>{{ infoEstamp.Tamanho }}</h2></ion-badge>
+      </ion-item-divider>
+    </ion-card-content>
+  </ion-card>
 
 
 
