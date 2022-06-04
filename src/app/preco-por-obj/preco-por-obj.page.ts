@@ -9,22 +9,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class PrecoPorObjPage implements OnInit {
 
   public infoEstamp: any;
-  
 
   constructor(private router: Router, private rotaAtiva: ActivatedRoute) {
     this.rotaAtiva.queryParams.subscribe(params => {
       if (this.router.getCurrentNavigation().extras.state) {
-        this.infoEstamp = this.router.getCurrentNavigation().extras.state. dadosEstamp;
+        this.infoEstamp = this.router.getCurrentNavigation().extras.state.dadosEstamp;
         console.log(this.infoEstamp);
       }
     })
-   }
-   
-
-  ngOnInit() {
-   
-    }
-
   }
+
+  ngOnInit() { }
+
+}
 
 
