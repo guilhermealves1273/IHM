@@ -36,7 +36,7 @@
           <ion-label>
             <ion-row *ngFor="let preco of dataPreco| keyvalue" class="ion-margin">
 
-              <ion-col button="true" routerLink="../tab1">{{ preco.value.tamanho }}</ion-col>
+              <ion-col>{{ preco.value.tamanho }}</ion-col>
               <ion-col>{{ preco.value.Preco }}</ion-col>
               <ion-col>{{ preco.value.Zona}}</ion-col>
             </ion-row>
